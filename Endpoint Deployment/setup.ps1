@@ -63,3 +63,5 @@ catch {
 }
 
 & Applications\ENP-DEP-APPS.ps1
+& Windows\ENP-REG-EDIT.ps1
+& Windows\ENP-WIN-SET.ps1
