@@ -41,3 +41,9 @@
 powercfg /change standby-timeout-ac 7200
 powercfg /change monitor-timeout-ac 3600
 
+# Enable Network Discovery
+Write-Host "Making sure the device can be found in your network..."
+Set-Service -Name upnphost -StartupType Automatic
+Set-Service -Name SSDPSRV -StartupType Automatic
+Set-Service -Name Dnscache -StartupType Automatic
+Set-Service -Name FDResPub -StartupType Automatic
