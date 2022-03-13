@@ -37,8 +37,20 @@
 # Github: https://github.com/LeonMoris                                                                                                            #
 #-------------------------------------------------------------------------------------------------------------------------------------------------#
 
-#Activate Windows
+# Function to create a directory
+function func_directory {
+    param($Path)
+    if (!(Test-Path $Path)) {
+        New-Item -ItemType Directory -Path $Path | out-null
+    }
+}
 
+#Sleep Function
+Function func_sleep{
+    Start-Sleep -s 5
+}
+
+#Activate Windows
 $SoftwareLicensingService = Get-WmiObject -Class SoftwareLicensingService
 $Key = $SoftwareLicensingService.OA3xOriginalProductKey
 
@@ -50,4 +62,4 @@ catch {
     write-warning $Error[0]
 }
 
-
+& Applications\ENP-DEP-APPS.ps1
