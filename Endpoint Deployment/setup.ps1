@@ -80,4 +80,5 @@ func_sleep
 & Applications\ENP-DEP-APPS.ps1
 & System\ENP-RegistryEdits.ps1
 & System\ENP-WindowsSettings.ps1
+& System\ENP-ImportWirelessProfiles.ps1
 & User\ENP-UserConfig.ps1
