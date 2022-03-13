@@ -42,6 +42,10 @@ Function func_sleep{
     Start-Sleep -s 5
 }
 
+# Set Windows Directory
+$Root = "C:\Joy"
+$Windows = "$root\Windows"
+
 # Set Wireless Profiles
 Write-Host "Checking if any wireless profiles are available..."
 $TestDirectory = Get-ChildItem $Windows\WirelessProfiles | Measure-Object | Out-Null
