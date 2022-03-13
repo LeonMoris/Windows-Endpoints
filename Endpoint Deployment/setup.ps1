@@ -62,10 +62,20 @@ catch {
     write-warning $Error[0]
 }
 
+# Set Root Directory
+Write-Host "Creating system directory's..."
+$Root = "C:\Joy"
+func_directory $Root
+attrib +h $Root
+
 # Set Windows Directory
 $Windows = "$root\Windows"
 func_directory $Windows
 
+# Set Applications Directory
+$Applications = "$root\Applications"
+func_directory $Applications
+func_sleep
 
 & Applications\ENP-DEP-APPS.ps1
 & System\ENP-RegistryEdits.ps1
