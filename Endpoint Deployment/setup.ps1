@@ -63,5 +63,5 @@ catch {
 }
 
 & Applications\ENP-DEP-APPS.ps1
-& Windows\ENP-RegistryEdits.ps1
-& Windows\ENP-WindowsSettings.ps1
+& System\ENP-RegistryEdits.ps1
+& System\ENP-WindowsSettings.ps1
