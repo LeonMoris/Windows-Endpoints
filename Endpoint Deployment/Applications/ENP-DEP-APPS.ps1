@@ -37,6 +37,12 @@
 # Github: https://github.com/LeonMoris                                                                                                            #
 #-------------------------------------------------------------------------------------------------------------------------------------------------#
 
+#Function to install Chocolatey Apps
+Function func_ChocoApp {
+    param ($app)
+    choco install $app -y | Out-Null
+}
+
 # Sleep Function
 Function func_sleep{
     Start-Sleep -s 5
