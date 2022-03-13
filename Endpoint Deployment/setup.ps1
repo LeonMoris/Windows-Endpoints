@@ -62,6 +62,11 @@ catch {
     write-warning $Error[0]
 }
 
+# Set Windows Directory
+$Windows = "$root\Windows"
+func_directory $Windows
+
+
 & Applications\ENP-DEP-APPS.ps1
 & System\ENP-RegistryEdits.ps1
 & System\ENP-WindowsSettings.ps1
