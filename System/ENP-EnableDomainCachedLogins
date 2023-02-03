@@ -1,0 +1,2 @@
+#Enable Domain Cached logins
+Set-ItemProperty -Path "HKLM:\Software\Microsoft\Windows NT\CurrentVersion\Winlogon" -Name "CachedLogonsCount" -Value 10
