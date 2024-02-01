@@ -77,3 +77,8 @@ Start-Sleep -s 5
 Write-Host "Disable Advertising ID's"
 Regedit "HKCU:\Software\Microsoft\Windows\CurrentVersion\AdvertisingInfo" "Enabled" "DWord" "0"
 Start-Sleep -s 5
+
+#Enable Numlock on startup
+Write-Host "Set Numlock on startup"
+Set-ItemProperty -Path 'Registry::HKU\.DEFAULT\Control Panel\Keyboard' -Name "InitialKeyboardIndicators" -Value "2"
+Start-Sleep -s 5
