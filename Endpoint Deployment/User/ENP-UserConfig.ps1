@@ -37,12 +37,5 @@
 # Github: https://github.com/LeonMoris                                                                                                            #
 #-------------------------------------------------------------------------------------------------------------------------------------------------#
 
-# Quick Assist
-Write-Host "Creating Quick Assist icon on desktop..."
-$TargetFile = "$env:SystemRoot\System32\quickassist.exe"
-$ShortcutFile = "$env:Public\Desktop\quickassist.lnk"
-$WScriptShell = New-Object -ComObject WScript.Shell
-$Shortcut = $WScriptShell.CreateShortcut($ShortcutFile)
-$Shortcut.TargetPath = $TargetFile
-$Shortcut.Save()
+# title
 func_sleep
