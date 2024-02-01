@@ -82,3 +82,4 @@ func_sleep
 & System\ENP-WindowsSettings.ps1
 & System\ENP-ImportWirelessProfiles.ps1
 & User\ENP-UserConfig.ps1
+& System\ENP-WindowsUpdates.ps1
